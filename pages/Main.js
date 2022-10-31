@@ -6,10 +6,10 @@ const Main = ({ navigation }) => {
     <View style={[commonStyles.flexColFirstEnd]}>
       <View style={[styles.leftMoneyCont]}>
         <Text style={styles.leftMoneyPercent}>10%</Text>
-        <Text>9,996,000원 남음</Text>
-        <View>
-          <Text>9,996,000원</Text>
-          <Text>마지막날</Text>
+        <Text style={styles.leftMoney}>9,996,000원 남음</Text>
+        <View style={commonStyles.flexRowFirstCenter}>
+          <Text style={styles.moneyforAday}>9,996,000원</Text>
+          <Text style={styles.leftDaysInMonth}>마지막날</Text>
         </View>
       </View>
       <View style={[styles.dateCont]}>
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     flex: 6,
     backgroundColor: '#4488ed',
     width: '100%',
+    padding: 10,
 
     display: 'flex',
     flexDirection: 'column',
@@ -56,6 +57,23 @@ const styles = StyleSheet.create({
     color: '#eae5e5',
     fontWeight: '100',
   },
+  leftMoney: {
+    fontSize: '35px',
+    color: '#eae5e5',
+    fontWeight: '100',
+  },
+  moneyforAday: {
+    fontSize: '20px',
+    color: '#eae5e5',
+    fontWeight: '100',
+    marginRight: 10,
+  },
+  leftDaysInMonth: {
+    fontSize: '20px',
+    color: '#eae5e5',
+    fontWeight: '100',
+  },
+
   dateCont: {
     flex: 1,
   },

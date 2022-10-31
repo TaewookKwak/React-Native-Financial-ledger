@@ -24,6 +24,13 @@ const commonStyles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
   },
+
+  flexRowFirstCenter: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  },
 })
 
 export default commonStyles
