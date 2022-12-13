@@ -35,6 +35,7 @@ export const CalendarScreenNavigation = () => {
         }}
       />
       <Stack.Screen name="Record" component={Record} />
+      <Stack.Screen name="Record2ND" component={Record2ND} />
     </Stack.Navigator>
   )
 }
@@ -50,6 +51,7 @@ export const SettingScreenNavigation = () => {
         }}
       />
       <Stack.Screen name="Record" component={Record} />
+      <Stack.Screen name="Record2ND" component={Record2ND} />
     </Stack.Navigator>
   )
 }
