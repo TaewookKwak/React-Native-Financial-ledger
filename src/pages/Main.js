@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, StyleSheet, Text, View, Pressable } from 'react-native'
-import commonStyles from '../assets/styles'
+import commonStyles from '@assets/styles'
 const Main = ({ navigation }) => {
   return (
     <View style={[commonStyles.flexColFirstEnd]}>
