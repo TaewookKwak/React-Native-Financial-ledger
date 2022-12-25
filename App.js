@@ -5,8 +5,19 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import TabNavigation from '@/routes/tabNavigation'
+import { useFonts } from 'expo-font'
+import * as SplashScreen from 'expo-splash-screen'
+
 export default function App() {
   const Stack = createNativeStackNavigator()
+  const [loaded] = useFonts({
+    Pretendard: require('@/assets/fonts/PretendardVariable.ttf'),
+    Ttang: require('@/assets/fonts/T-Medium.ttf'),
+  })
+
+  if (!loaded) {
+    return null
+  }
 
   return (
     <NavigationContainer>
