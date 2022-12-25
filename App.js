@@ -13,6 +13,7 @@ export default function App() {
   const [loaded] = useFonts({
     Pretendard: require('@/assets/fonts/PretendardVariable.ttf'),
     Ttang: require('@/assets/fonts/T-Medium.ttf'),
+    Ttang_L: require('@/assets/fonts/T-Light.ttf'),
   })
 
   if (!loaded) {

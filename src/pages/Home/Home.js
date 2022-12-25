@@ -4,7 +4,7 @@ import { Text, TouchableOpacity, View } from 'react-native'
 const Home = ({ navigation }) => {
   return (
     <View>
-      <Text style={{ fontSize: '30', fontFamily: 'Ttang' }}>
+      <Text style={{ fontSize: '30', fontFamily: 'Ttang_L' }}>
         나는나는나는멍충이다
       </Text>
       <TouchableOpacity
